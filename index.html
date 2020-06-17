@@ -21,8 +21,19 @@
   </p>
   <h1>&lt;meta&gt;</h1>
   <p>
-    The tag &lt;meta&gt; adds metadata (such as the character set) to the
+    The &lt;meta&gt; tag adds metadata (such as the character set) to the
     document.
+  </p>
+  <h1>&lt;link&gt;</h1>
+  <p>
+    The &lt;link&gt; tag specifies relationships between the current document
+    and an external resource. Use the <strong>href</strong> attribute to point
+    to a file and the <strong>rel</strong> attribute to specify what the file
+    does.
+  </p>
+  <h1>&lt;script&gt;</h1>
+  <p>
+    The &lt;script&gt; tag loads a JavaScript file.
   </p>
   <h1>&lt;title&gt;</h1>
   <p>
@@ -47,11 +58,12 @@
   </p>
   <h1>&lt;em&gt;</h1>
   <p>
-    <em>The &lt;em&gt; tag converts your font to italic, like this.</em>
+    <em>The &lt;em&gt; tag gives emphasis to your text, like this.</em>
   </p>
   <h1>&lt;strong&gt;</h1>
   <p>
-    <strong>The &lt;strong&gt; tag converts your font to bold, like this.</strong>
+    <strong>The &lt;strong&gt; tag gives importance to your text, like
+      this.</strong>
   </p>
   <h1>&lt;img&gt;</h1>
   <p>
@@ -69,7 +81,66 @@
     <strong>title</strong> attribute, and the browsing context (if it opens a
     new window, tab, etc) with the <strong>target</strong> attribute.
   </p>
-  <h1></h1>
+  <h1>&lt;span&gt;</h1>
+  <p>
+    The &lt;span&gt; tag wraps content that you want to style with CSS,
+    without giving any extra meaning to it.
+  </p>
+  <h1>&lt;ul&gt;, &lt;li&gt;</h1>
+  <p>
+    The &lt;ul&gt; tag makes an unordered list, of which each item is wrapped
+    with a &lt;li&gt; tag.
+  </p>
+  <ul>
+    <li>Like</li>
+    <li>this</li>
+    <li>list.</li>
+  </ul>
+  <h1>&lt;ol&gt;, &lt;li&gt;</h1>
+  <p>
+    The &lt;ol&gt; tag makes an ordered list, of which each item is wrapped
+    with a &lt;li&gt; tag.
+  </p>
+  <ol>
+    <li>Like</li>
+    <li>this</li>
+    <li>list.</li>
+  </ol>
+  <h1>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h1>
+  <p>
+    These tags mean, respectively: description list, description term and
+    description definition. These are used in lists of terms and their
+    definitions or in questions and answers.
+  </p>
+  <dl>
+    <dt>melancholic</dt>
+    <dd>
+      Melancholic individuals tend to be analytical and detail-oriented, and
+      they are deep thinkers and feelers.
+    </dd>
+    <dt>phlegmatic</dt>
+    <dd>
+      Phlegmatic individuals tend to be relaxed, peaceful, quiet, and
+      easy-going.
+    </dd>
+    <dt>sanguine</dt>
+    <dd>
+      Sanguine personality type is described primarily as being highly
+      talkative, enthusiastic, active, and social.
+    </dd>
+    <dt>choleric</dt>
+    <dd>
+      Choleric individuals tend to be more extroverted. They are described as
+      independent, decisive, goal-oriented, and ambitious.
+    </dd>
+  </dl>
+  <h1>&lt;blockquote&gt;</h1>
+  <blockquote cite="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting">
+    If a section of block level content (be it a paragraph, multiple paragraphs,
+    a list, etc.) is quoted fromsomewhere else, you should wrap it inside a
+    &lt;blockquote&gt; element to signify this, and include a URL pointing to the
+    source of the quote inside a <strong>cite</strong> attribute.
+  </blockquote>
 </body>
 
 </html>
