@@ -242,19 +242,19 @@
     The &lt;img&gt; tag displays an image. You can specify the source with the
     <strong>src</strong> attribute and if the image fails to load, an
     alternative text with the <strong>alt</strong> attribute.
-    <img src="img.png" alt="image of the img code for this image" />
+    <img src="imgs/img.png" alt="image of the img code for this image" />
   </p>
   <h1>&lt;video&gt;</h1>
   <p>
     The &lt;video&gt; tag displays a video. Use the <strong>src</strong> 
     attribute. The <strong>controls</strong> attribute makes a user interface.<br />
-    <video src="video.mp4" controls></video>
+    <video src="videos/video.mp4" controls></video>
   </p>
   <h1>&lt;audio&gt;</h1>
   <p>
     The &lt;audio&gt; tag display audio. Use the <strong>src</strong> 
     attribute. The <strong>controls</strong> attribute makes a user interface.<br />
-    <audio src="audio.mp3" controls></audio>
+    <audio src="audios/audio.mp3" controls></audio>
   </p>
   <h1>&lt;canvas&gt;</h1>
   <p>
@@ -295,10 +295,32 @@
     attribute, which specifies the size of device you want to show this particular 
     image on. The <strong>srcset</strong> tag determines the source.<br />
     <picture>
-      <source media="(min-width: 800px" srcset="img2.jpg">
-      <source media="(max-width: 799px)" srcset="img3.png">
-      <img src="img2.jpg" alt="landscape" width="25%">
+      <source media="(min-width: 800px" srcset="imgs/img2.jpg">
+      <source media="(max-width: 799px)" srcset="imgs/img3.png">
+      <img src="imgs/img2.jpg" alt="landscape" width="25%">
     </picture>
+  </p>
+  <h1>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h1>
+  <p>
+    The &lt;table&gt; tag makes tables with data. Inside it, you can add 
+    rows with the &lt;tr&gt; tag, and inside those you add data with the 
+    &lt;td&gt; tag. You can also add headers with the &lt;th&gt; tag, and 
+    they will be treated as headers. There are lots of attributes you can 
+    use for all of them, so they will not all be listed.
+    <table>
+      <tr>
+        <th>Name</th><th>Mass (10^<sup>24</sup>kg)</th><th>Diameter (km)</th>
+      </tr>
+      <tr>
+        <td>Mercury</td><td>0.33</td><td>4.879</td>
+      </tr>
+      <tr>
+        <td>Venus</td><td>4.87</td><td>12.104</td>
+      </tr>
+      <tr>
+        <td>Earth</td><td>5.97</td><td>12.756</td>
+      </tr>
+    </table>
   </p>
 
 
