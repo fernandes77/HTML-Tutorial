@@ -8,6 +8,22 @@
 </head>
 
 <body>
+  <h1>HTML Tutorial</h1>
+  <h2>This is a list of HTML tags and what they do.</h2>
+  <h3>
+    I took the most important HTML tags and gave them a very brief description. This was made 
+    for self-education purposes. It gave me a general idea of the power of pure HTML.
+  </h3>
+  <br /><hr /><br />
+  <h2>Tags index</h2>
+  <h3><a href="#basics">Basics</a></h3>
+  <h3><a href="#head-elements">Head elements</a></h3>
+  <h3><a href="#text">Text</a></h3>
+  <h3><a href="#navigation">Navigation</a></h3>
+  <h3><a href="#embedded-content">Embedded content</a></h3>
+  <h3><a href="#misc">Misc.: Tables, br and hr</a></h3>
+  <br /><hr /><br />
+  <div id="basics"></div>
   This is just text. No tags.<br />
   <h1>&lt;html&gt;</h1>
   <p>
@@ -19,7 +35,12 @@
     The &lt;head&gt; tag contains everything that the webpage will not show.
     This includes keywords, page description, css references, etc.
   </p>
-  <h1>&lt;meta&gt;</h1>
+  <h1>&lt;body&gt;</h1>
+  <p>
+    The &lt;body&gt; contains all of the content that is displayed to the
+    user.
+  </p>
+  <h1 id="head-elements">&lt;meta&gt;</h1>
   <p>
     The &lt;meta&gt; tag adds metadata (such as the character set) to the
     document.
@@ -31,20 +52,16 @@
     to a file and the <strong>rel</strong> attribute to specify what the file
     does.
   </p>
-  <h1>&lt;script&gt;</h1>
-  <p>
-    The &lt;script&gt; tag loads a JavaScript file.
-  </p>
   <h1>&lt;title&gt;</h1>
   <p>
     The &lt;title&gt; tag specifies the webpage's title.
   </p>
-  <h1>&lt;body&gt;</h1>
+  <h1>&lt;script&gt;</h1>
   <p>
-    The &lt;body&gt; contains all of the content that is displayed to the
-    user.
+    The &lt;script&gt; tag loads a JavaScript file. Use the <strong>defer</strong> 
+    attribute to optimize loading.
   </p>
-  <h1>
+  <h1 id="text">
     &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;
   </h1>
   <p>
@@ -166,15 +183,15 @@
   </p>
   <h1>&lt;code&gt;, &lt;pre&gt;</h1>
   <p>
-    The &lt;code&gt; wraps code. The &lt;pre&gt; tag retains all monospace, displaying 
+    The &lt;code&gt; wraps code. The &lt;pre&gt; tag retains all monospace, displaying
     text exactly as it is written inside the HTML document.
-    <pre>
-      <code>
-        let x = 5;
-        if (x === 5)
-          return x;
-      </code>
-    </pre>
+  <pre>
+        <code>
+          let x = 5;
+          if (x === 5)
+            return x;
+        </code>
+      </pre>
   </p>
   <h1>&lt;var&gt;</h1>
   <p>
@@ -190,18 +207,18 @@
   </p>
   <h1>&lt;time&gt;</h1>
   <p>
-    The &lt;time&gt; tag is used for specifying times and dates. Use the <strong>datetime</strong> 
+    The &lt;time&gt; tag is used for specifying times and dates. Use the <strong>datetime</strong>
     attribute to make it machine-readable.<br />
     The time now is <time datetime="18:28">18h28</time>.
   </p>
-  <h1>&lt;header&gt;</h1>
+  <h1 id="navigation">&lt;header&gt;</h1>
   <p>
-    The &lt;header&gt; tag represents introductory and/or navigational content that 
+    The &lt;header&gt; tag represents introductory and/or navigational content that
     usually sits on top of the page.
   </p>
   <h1>&lt;nav&gt;</h1>
   <p>
-    The &lt;nav&gt; tag represents a section whose purpose is purely navigational, like 
+    The &lt;nav&gt; tag represents a section whose purpose is purely navigational, like
     menus and tables.
   </p>
   <h1>&lt;main&gt;</h1>
@@ -218,7 +235,7 @@
   </p>
   <h1>&lt;div&gt;</h1>
   <p>
-    The &lt;div&gt; tag is a generic container. It is easily styled using the <strong>class</strong> 
+    The &lt;div&gt; tag is a generic container. It is easily styled using the <strong>class</strong>
     and <strong>id</strong> attributes.
   </p>
   <h1>&lt;aside&gt;</h1>
@@ -229,15 +246,7 @@
   <p>
     The &lt;footer&gt; tag contains content at the bottom of the page. Documents, copyrights, etc.
   </p>
-  <h1>&lt;br&gt;</h1>
-  <p>
-    The &lt;br&gt; tag creates a line break in a paragraph, like <br />this.
-  </p>
-  <h1>&lt;hr&gt;</h1>
-  <p>
-    The &lt;hr&gt; tag displays a horizontal line, like this one.<hr />
-  </p>
-  <h1>&lt;img&gt;</h1>
+  <h1 id="embedded-content">&lt;img&gt;</h1>
   <p>
     The &lt;img&gt; tag displays an image. You can specify the source with the
     <strong>src</strong> attribute and if the image fails to load, an
@@ -246,33 +255,33 @@
   </p>
   <h1>&lt;video&gt;</h1>
   <p>
-    The &lt;video&gt; tag displays a video. Use the <strong>src</strong> 
+    The &lt;video&gt; tag displays a video. Use the <strong>src</strong>
     attribute. The <strong>controls</strong> attribute makes a user interface.<br />
     <video src="videos/video.mp4" controls></video>
   </p>
   <h1>&lt;audio&gt;</h1>
   <p>
-    The &lt;audio&gt; tag display audio. Use the <strong>src</strong> 
+    The &lt;audio&gt; tag display audio. Use the <strong>src</strong>
     attribute. The <strong>controls</strong> attribute makes a user interface.<br />
     <audio src="audios/audio.mp3" controls></audio>
   </p>
   <h1>&lt;canvas&gt;</h1>
   <p>
-    The &lt;canvas&gt; is used to create graphics via scripting. Since this website 
+    The &lt;canvas&gt; is used to create graphics via scripting. Since this website
     doesn't have any JavaScript, it won't appear.
     <canvas></canvas>
   </p>
   <h1>&lt;iframe&gt;</h1>
   <p>
-    The &lt;iframe&gt; tag embeds another webpage into your own webpage. The most 
+    The &lt;iframe&gt; tag embeds another webpage into your own webpage. The most
     important attributes are:
-    <ul>
-      <li><strong>src</strong>, for your source</li>
-      <li><strong>allowfullscreen</strong>, to allow fullscreen</li>
-      <li><strong>width</strong> and <strong>height</strong></li>
-      <li><strong>sandbox</strong>, to request heightened security settings.</li>
-    </ul>
-    <iframe src="https://www.html.am/" width="500" height="300"></iframe>
+  <ul>
+    <li><strong>src</strong>, for your source</li>
+    <li><strong>allowfullscreen</strong>, to allow fullscreen</li>
+    <li><strong>width</strong> and <strong>height</strong></li>
+    <li><strong>sandbox</strong>, to request heightened security settings.</li>
+  </ul>
+  <iframe src="https://www.html.am/" width="500" height="300"></iframe>
   </p>
   <h1>&lt;embed&gt;, &lt;object&gt;</h1>
   <p>
@@ -281,18 +290,15 @@
   <h1>&lt;svg&gt;</h1>
   <p>
     The &lt;svg&gt; tag creates a vector graphic, like this one.<br />
-    <svg version="1.1"
-        baseProfile="full"
-        width="300" height="200"
-        xmlns="http://www.w3.org/2000/svg">
+    <svg version="1.1" baseProfile="full" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
       <circle cx="150" cy="100" r="90" fill="blue" />
     </svg>
   </p>
   <h1>&lt;picture&gt;, &lt;source&gt;</h1>
   <p>
-    The &lt;picture&gt; is used for responsive images, meaning images that 
-    fit right in the device screen. The &lt;source&gt; tag has a <strong>media</strong> 
-    attribute, which specifies the size of device you want to show this particular 
+    The &lt;picture&gt; is used for responsive images, meaning images that
+    fit right in the device screen. The &lt;source&gt; tag has a <strong>media</strong>
+    attribute, which specifies the size of device you want to show this particular
     image on. The <strong>srcset</strong> tag determines the source.<br />
     <picture>
       <source media="(min-width: 800px" srcset="imgs/img2.jpg">
@@ -300,61 +306,54 @@
       <img src="imgs/img2.jpg" alt="landscape" width="25%">
     </picture>
   </p>
-  <h1>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h1>
+  <h1 id="misc">&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;, &lt;caption&gt;</h1>
   <p>
-    The &lt;table&gt; tag makes tables with data. Inside it, you can add 
-    rows with the &lt;tr&gt; tag, and inside those you add data with the 
-    &lt;td&gt; tag. You can also add headers with the &lt;th&gt; tag, and 
-    they will be treated as headers. There are lots of attributes you can 
-    use for all of them, so they will not all be listed.
-    <table>
-      <tr>
-        <th>Name</th><th>Mass (10^<sup>24</sup>kg)</th><th>Diameter (km)</th>
-      </tr>
-      <tr>
-        <td>Mercury</td><td>0.33</td><td>4.879</td>
-      </tr>
-      <tr>
-        <td>Venus</td><td>4.87</td><td>12.104</td>
-      </tr>
-      <tr>
-        <td>Earth</td><td>5.97</td><td>12.756</td>
-      </tr>
-    </table>
+    The &lt;table&gt; tag makes tables with data. Inside it, you can add
+    rows with the &lt;tr&gt; tag, and inside those you add data with the
+    &lt;td&gt; tag. You can also add headers with the &lt;th&gt; tag, and
+    they will be treated as headers. There are lots of attributes you can
+    use for all of them, so they will not all be listed. The &lt;caption&gt;
+    tag is placed beneath the &lt;table&gt; tag and gives a caption to the
+    table.
+  <table>
+    <caption>Properties of Planets</caption>
+    <tr>
+      <th>Name</th>
+      <th>Mass (10^<sup>24</sup>kg)</th>
+      <th>Diameter (km)</th>
+    </tr>
+    <tr>
+      <td>Mercury</td>
+      <td>0.33</td>
+      <td>4.879</td>
+    </tr>
+    <tr>
+      <td>Venus</td>
+      <td>4.87</td>
+      <td>12.104</td>
+    </tr>
+    <tr>
+      <td>Earth</td>
+      <td>5.97</td>
+      <td>12.756</td>
+    </tr>
+  </table>
   </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <h1>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</h1>
+  <p>
+    These tags don't do anything to the table data, but are useful for styling. 
+    Use &lt;thead&gt; for headings, &lt;tbody&gt; for most of the data and 
+    &lt;tfoot&gt; for the footer, which is usually some operation like the column's 
+    sum, but not always the case.
+  </p>
+  <h1>&lt;br&gt;</h1>
+  <p>
+    The &lt;br&gt; tag creates a line break in a paragraph, like <br />this.
+  </p>
+  <h1>&lt;hr&gt;</h1>
+  <p>
+    The &lt;hr&gt; tag displays a horizontal line, like this one.
+    <hr />
+  </p>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
