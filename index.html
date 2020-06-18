@@ -250,9 +250,56 @@
     attribute. The <strong>controls</strong> attribute makes a user interface.<br />
     <video src="video.mp4" controls></video>
   </p>
-
-
-
+  <h1>&lt;audio&gt;</h1>
+  <p>
+    The &lt;audio&gt; tag display audio. Use the <strong>src</strong> 
+    attribute. The <strong>controls</strong> attribute makes a user interface.<br />
+    <audio src="audio.mp3" controls></audio>
+  </p>
+  <h1>&lt;canvas&gt;</h1>
+  <p>
+    The &lt;canvas&gt; is used to create graphics via scripting. Since this website 
+    doesn't have any JavaScript, it won't appear.
+    <canvas></canvas>
+  </p>
+  <h1>&lt;iframe&gt;</h1>
+  <p>
+    The &lt;iframe&gt; tag embeds another webpage into your own webpage. The most 
+    important attributes are:
+    <ul>
+      <li><strong>src</strong>, for your source</li>
+      <li><strong>allowfullscreen</strong>, to allow fullscreen</li>
+      <li><strong>width</strong> and <strong>height</strong></li>
+      <li><strong>sandbox</strong>, to request heightened security settings.</li>
+    </ul>
+    <iframe src="https://www.html.am/" width="500" height="300"></iframe>
+  </p>
+  <h1>&lt;embed&gt;, &lt;object&gt;</h1>
+  <p>
+    Similar to the &lt;iframe&gt; tag. However, not used anymore.
+  </p>
+  <h1>&lt;svg&gt;</h1>
+  <p>
+    The &lt;svg&gt; tag creates a vector graphic, like this one.<br />
+    <svg version="1.1"
+        baseProfile="full"
+        width="300" height="200"
+        xmlns="http://www.w3.org/2000/svg">
+      <circle cx="150" cy="100" r="90" fill="blue" />
+    </svg>
+  </p>
+  <h1>&lt;picture&gt;, &lt;source&gt;</h1>
+  <p>
+    The &lt;picture&gt; is used for responsive images, meaning images that 
+    fit right in the device screen. The &lt;source&gt; tag has a <strong>media</strong> 
+    attribute, which specifies the size of device you want to show this particular 
+    image on. The <strong>srcset</strong> tag determines the source.<br />
+    <picture>
+      <source media="(min-width: 800px" srcset="img2.jpg">
+      <source media="(max-width: 799px)" srcset="img3.png">
+      <img src="img2.jpg" alt="landscape" width="25%">
+    </picture>
+  </p>
 
 
 
