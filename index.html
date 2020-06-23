@@ -21,7 +21,7 @@
   <h3><a href="#text">Text</a></h3>
   <h3><a href="#navigation">Navigation</a></h3>
   <h3><a href="#embedded-content">Embedded content</a></h3>
-  <h3><a href="#misc">Misc.: Tables, br and hr</a></h3>
+  <h3><a href="#misc">Misc.: Tables, forms, br and hr</a></h3>
   <br /><hr /><br />
   <div id="basics"></div>
   This is just text. No tags.<br />
@@ -315,6 +315,7 @@
     use for all of them, so they will not all be listed. The &lt;caption&gt;
     tag is placed beneath the &lt;table&gt; tag and gives a caption to the
     table.
+  </p>
   <table>
     <caption>Properties of Planets</caption>
     <tr>
@@ -338,7 +339,6 @@
       <td>12.756</td>
     </tr>
   </table>
-  </p>
   <h1>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</h1>
   <p>
     These tags don't do anything to the table data, but are useful for styling. 
@@ -346,6 +346,17 @@
     &lt;tfoot&gt; for the footer, which is usually some operation like the column's 
     sum, but not always the case.
   </p>
+  <h1>&lt;form&gt;, &lt;label&gt;, &lt;input&gt;</h1>
+  <p>
+    The &lt;form&gt; tag allows the creation of forms to be filled and sent by the user. The &lt;label&gt; and 
+    &lt;input&gt; tags create the components of the form.
+  </p>
+  <form>
+    <label>Name:
+      <input name="submitted-name" autocomplete="name">
+    </label>
+    <button>Save</button>
+  </form>
   <h1>&lt;br&gt;</h1>
   <p>
     The &lt;br&gt; tag creates a line break in a paragraph, like <br />this.
